@@ -19,7 +19,7 @@
     $(document).ready(function(){
       map = new GMaps({
         div: '#map',
-        lat: 51.635786, 
+        lat: 51.635786,
         lng: 8.440583,
         zoomControl : true,
         zoomControlOpt: {
@@ -32,8 +32,11 @@
         overviewMapControl: false
       });
 
+      b = [new google.maps.LatLng(51.639808, 8.510186), new google.maps.LatLng(51.671437, 8.344704)];
+      map.fitBounds(b);
+
       map.addMarker({
-        lat: 51.635786, 
+        lat: 51.635786,
         lng: 8.440583,
         title: 'SCHWERATHLET',
         infoWindow: {
