@@ -514,6 +514,18 @@ article h1 a:hover {
   clear:both;
 }
 
+#contact {
+    width:30%;
+    text-align:center;
+    color:#888;
+}
+
+#contact .email {
+    white-space:nowrap;
+    color:white;
+
+}
+
 #opening {
 float:left;
 width:35%;
