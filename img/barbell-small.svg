@@ -1,0 +1,31 @@
+<svg width="128" height="34" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <title>Barbell</title>
+ <defs>
+  <mask id="inner" stroke="none">
+   <rect x="0" y="0" width="540" height="130" fill="white"/>
+   <g fill="black" transform="translate(2, 2)">
+    <rect id="o-bar-left" height="4" width="3" y="13" x="0"/>
+    <rect id="o-plate-small-left" height="14" width="4" y="8" x="5"/>
+    <rect id="o-plate-medium-left" height="22" width="7" y="4" x="11"/>
+    <rect id="o-plate-big-left" height="30" width="10" y="0" x="20"/>
+    <rect id="o-bar" height="4" width="60" y="13" x="32"/>
+    <rect id="o-plate-big-right" height="30" width="10" y="0" x="94"/>
+    <rect id="o-plate-medium-right" height="22" width="7" y="4" x="106"/>
+    <rect id="o-plate-small-right" height="14" width="4" y="8" x="115"/>
+    <rect id="o-bar-right" height="4" width="3" y="13" x="121"/>
+   </g>
+  </mask>
+ </defs>
+   <g id="outer" fill="currentColor" mask="url(#inner)" transform="translate(0, 0)">
+    <rect id="i-bar-left" height="4" width="3" y="13" x="0"/>
+    <rect id="i-plate-small-left" height="18" width="8" y="8" x="5"/>
+    <rect id="i-plate-medium-left" height="26" width="11" y="4" x="11"/>
+    <rect id="i-plate-big-left" height="34" width="14" y="0" x="20"/>
+    <rect id="i-bar" height="8" width="128" y="13" x="0"/>
+    <rect id="i-plate-big-right" height="34" width="14" y="0" x="94"/>
+    <rect id="i-plate-medium-right" height="26" width="11" y="4" x="106"/>
+    <rect id="i-plate-small-right" height="18" width="8" y="8" x="115"/>
+   </g>
+
+</svg>

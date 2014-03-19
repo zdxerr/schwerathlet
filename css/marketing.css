@@ -1,3 +1,4 @@
+
 @font-face {
 font-family: 'Myriad Pro Regular';
 font-style: normal;
@@ -11,6 +12,8 @@ font-style: normal;
 font-weight: normal;
 src: local('Myriad Pro Bold'), url('/css/fonts/MYRIADPRO-BOLD.woff') format('woff');
 }
+
+@charset "UTF-8";img,canvas,iframe,video,svg{max-width:100%}.overflow-container{overflow-y:scroll;-webkit-overflow-scrolling:touch}
 
 @media screen and (min-width: 35.5em) {
     .pure-u-sm-1,
@@ -883,40 +886,6 @@ body {
     font-size: 13px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-label {
-    color: #34495e;
-}
-
-.pure-img-responsive {
-    max-width: 100%;
-    height: auto;
-}
-
-/*
- * -- LAYOUT STYLES --
- * These are some useful classes which I will need
- */
-.l-box {
-    padding: 1em;
-}
-
-.l-box-lrg {
-    padding: 2em;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
-.is-center {
-    text-align: center;
-}
-
-
-
 /*
  * -- PURE FORM STYLES --
  * Style the form inputs and labels
@@ -959,42 +928,48 @@ a.pure-button-primary {
  * I want to customize how my .pure-menu looks at the top of the page
  */
 
-.home-menu {
+
+header nav  {
     padding: 0.5em;
     text-align: center;
     font-family: Myriad Pro Regular, Sans;
-    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+    text-transform: uppercase;
 }
-.home-menu.pure-menu-open {
-    background: #6A8DCD;
+header nav.pure-menu.pure-menu-open {
+    background-color: #6A8DCD;
 }
-.pure-menu.pure-menu-open.pure-menu-fixed {
+header nav.pure-menu-open.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
     border: none;
     /* I need a higher z-index here because of the scroll-over effect. */
     z-index: 4;
 }
 
-.home-menu .pure-menu-heading {
+header nav.pure-menu .pure-menu-heading {
     color: white;
     font-family: Myriad Pro Regular;
     font-weight: 400;
     font-size: 1.3rem;
 }
 
-.home-menu .pure-menu-selected a {
+header nav.pure-menu .pure-menu-selected {
     color: #291E67;
 }
 
-.home-menu a {
+header nav.pure-menu a {
     color: #E8E8F7;
+
 }
-.home-menu li a:hover,
-.home-menu li a:focus {
+header nav.pure-menu li a:hover,
+header nav.pure-menu li a:focus {
     background: none;
-    color: #251547;
 }
 
+header nav a:hover,
+header nav a:focus {
+    color: #251547;
+    fill: red;
+}
 
 /*
  * -- SPLASH STYLES --
@@ -1002,7 +977,11 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background: #1f8dd6;
+    background: #ECE8F7;
+    background-image: url('/img/splash/{{ site.time | date: '%y_%U' }}.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -1015,79 +994,57 @@ a.pure-button-primary {
 
 .splash {
     /* absolute center .splash within .splash-container */
-    width: 80%;
+    /*width: 80%;*/
+
     height: 50%;
     margin: auto;
     position: absolute;
-    top: 100px; left: 0; bottom: 0; right: 0;
+    top: auto; left: 0; bottom: 0; right: 0;
     text-align: center;
-    text-transform: uppercase;
 }
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
     font-size: 20px;
-    font-weight: bold;
-    color: white;
-    border: 3px solid white;
-    padding: 1em 1.6em;
-    font-weight: 100;
+    font-weight: normal;
     border-radius: 5px;
-    line-height: 1em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: black;
+    background:white;
+    opacity: 0.85;
+    margin: 0;
+    display:inline-block;
+    padding:0 1em;
 }
 
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
-    color: white;
     letter-spacing: 0.05em;
-    opacity: 0.8;
-}
-
-/*
- * -- CONTENT STYLES --
- * This represents the content area (everything below the blue section)
- */
-.content-wrapper {
-    /* These styles are required for the "scroll-over" effect */
-    position: absolute;
-    top: 87%;
-    width: 100%;
-    min-height: 12%;
-    z-index: 2;
-    background: white;
-
-}
-
-/* This is the class used for the main content headers (<h2>) */
-.content-head {
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin: 2em 0 1em;
-}
-
-/* This is a modifier class used when the content-head is inside a ribbon */
-.content-head-ribbon {
-    color: white;
-}
-
-/* This is the class used for the content sub-headers (<h3>) */
-.content-subhead {
-    color: #1f8dd6;
-}
-    .content-subhead i {
-        margin-right: 7px;
-    }
-
-/* This is the class used for the dark-background areas. */
-.ribbon {
-    background: #2d3e50;
-    color: #aaa;
+    opacity: 0.85;
+    border-radius: 5px;
+    background:white;
 }
 
 /* This is the class used for the footer */
-.footer {
+footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    text-align:center;
     background: #111;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    background: #111;
+}
+
+footer nav.pure-menu .pure-menu-heading {
+    text-transform: capitalize;
 }
 
 /*
@@ -1108,10 +1065,10 @@ a.pure-button-primary {
 
     /* We can align the menu header to the left, but float the
     menu items to the right. */
-    .home-menu {
+    header nav {
         text-align: left;
     }
-        .home-menu ul {
+        header nav ul {
             float: right;
         }
 

@@ -1,0 +1,32 @@
+<svg id="barbel" width="540" height="130" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <title>Barbell</title>
+ <defs>
+  <mask id="inner"  stroke="none">
+   <rect id="svg_1" x="0" y="0" width="540" height="130" fill="white"/>
+   <g fill="black">
+    <rect id="svg_1" height="15" width="300" y="57" x="120"/>
+    <rect id="svg_2" height="100" width="30" y="15" x="85"/>
+    <rect id="svg_3" height="100" width="30" y="15" x="425"/>
+    <rect id="svg_4" height="70" width="25" y="30" x="55"/>
+    <rect id="svg_5" height="70" width="25" y="30" x="460"/>
+    <rect id="svg_6" height="50" width="20" y="40" x="30"/>
+    <rect id="svg_7" height="50" width="20" y="40" x="490"/>
+    <rect id="svg_8" height="15" width="10" y="57" x="515"/>
+    <rect id="svg_10" height="15" width="10" y="57" x="15"/>
+   </g>
+  </mask>
+ </defs>
+<g fill="currentColor">
+  <title>Layer 1</title>
+  <g id="outer" mask="url(#inner)" stroke-width="0">
+   <rect id="svg_22" height="60" width="30" y="35" x="485"/>
+   <rect id="svg_21" height="60" width="30" y="35" x="25"/>
+   <rect id="svg_20" height="80" width="35" y="25" x="455"/>
+   <rect id="svg_19" height="80" width="35" y="25" x="50"/>
+   <rect id="svg_18" height="110" width="40" y="10" x="420"/>
+   <rect id="svg_17" height="110" width="40" y="10" x="80"/>
+   <rect id="svg_16" height="25" width="520" y="52" x="10"/>
+  </g> 
+ </g>
+</svg>

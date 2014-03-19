@@ -1,5 +1,5 @@
 ---
 layout: start
 name: about
-locale: de
+locale: en
 ---

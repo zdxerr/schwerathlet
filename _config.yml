@@ -7,31 +7,58 @@ redirects: yes
 
 locales:
   en:
-    nav:
-    - text: "Schwerathlet"
-      url: /en/index.html
-      layout: heading
-    - text: "Location"
-      url: /en/location.html
-    - text: "Knowledge Base"
-      url: /en/knowledge-base.hmtl
-    - text: "About"
-      url: /en/about.html
-    - text: "Contact"
-      url: /en/contanct.html
-    welcome_message: "Train your endurance, stamina, strength, flexibility, power, coordination, agility, balance and accuracy."
+    header: 
+      text: "Schwerathlet"
+      file: index
+      navigation:
+        location:
+          text: "Location"
+          file: location
+        knowledge:
+          text: "Knowledge Base"
+          file: knowledge-base
+        about:
+          text: "About"
+          file: about
+        contact:
+          text: "Contact"
+          file: contact
+    footer:
+      language:
+        text: "Language"
+        locales:
+          - text: "German"
+            locale: de
+          - text: "English"
+            locale: en
+    start:
+      header: "Schwerathlet"
+      message: "Train your endurance, stamina, strength, flexibility, power, coordination, agility, balance and accuracy."
   de:
-    nav:
-    - text: "Schwerathlet"
-      url: /de/index.html
-      layout: heading
-    - text: "Standort"
-      url: /de/standort.html
-    - text: "Grundlagenwissen"
-      url: /de/grundlagenwissen.html
-      layout: post
-    - text: "Impressum"
-      url: /de/impressum.html
-    - text: "Kontakt"
-      url: /de/kontakt.html
-    welcome_message: "Trainiere deine Ausdauer, Kraft, Beweglichkeit, Schnelligkeit, Geschicklichkeit, Balance, Koordination und Genauigkeit." 
+    header:
+      text: "Schwerathlet"
+      file: index
+      navigation:
+        location:
+          text: "Standort"
+          file: standort
+        knowledge:
+          text: "Grundlagenwissen"
+          file: grundlagenwissen
+        about:
+          text: "Impressum"
+          file: impressum
+        contact:
+          text: "Kontakt"
+          file: kontakt 
+    footer:
+      language:
+        text: "Sprache"
+        locales:
+          - locale: de
+            text: "Deutsch"
+          - locale: en
+            text: "Englisch"
+    start:
+      header: "Schwerathlet"
+      message: "Trainiere deine Ausdauer, Kraft, Beweglichkeit, Schnelligkeit, Geschicklichkeit, Balance, Koordination und Genauigkeit." 
