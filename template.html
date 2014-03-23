@@ -1,3 +1,8 @@
+---
+title: Start
+locale: de
+---
+
 <!doctype html>
 <html lang="{{ page.locale }}">
 <head>
@@ -24,25 +29,32 @@
     </nav>
 </header>
 
-{{ content }}
+<div id="splash">
+    <div class="background2014-11">
+        <div>
+            <h1>{{ site.locales[page.locale].start.header }}</h1>
+            <p>{{ site.locales[page.locale].start.message }}</p>
+        </div>
+    </div>
+</div>
 
 <footer>
     {% assign footer = site.locales[page.locale].footer %}
     <nav id="language">
+        
         <ul>
-            <li>{{ footer.language.text }}</li>
+        <li>{{ footer.language.text }}</li>
             {% for locale in footer.language.locales %}
-            <!-- {{locale}} -->
+
             {% if page.locale == locale.locale %}
-            <li class="selected"><a href="{{ page.url }}">{{ locale.text }}</a></li>
+            <li class="pure-menu-selected"><a href="{{ page.url }}">{{ locale.text }}</a></li>
             {% else %}
                 {% if page.locales contains locale.locale %}
                 {% assign file = page.locales %}
-                <!-- {{ locale }} -->
                 {% capture url %}/{{ locale.locale }}/{{ page.locales[locale.locale] }}.html{% endcapture %}
                 <li><a href="{{ url }}">{{ locale.text }}</a></li>
                 {% else %}
-                <li class="disabled">{{ locale.text }}</li>
+                <li class="pure-menu-disabled"><a>{{ locale.text }}</a></li>
                 {% endif %}
             {% endif %}
             {% endfor %}

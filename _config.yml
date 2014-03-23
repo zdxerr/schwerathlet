@@ -8,9 +8,10 @@ redirects: yes
 locales:
   en:
     header: 
-      text: "Schwerathlet"
-      file: index
       navigation:
+        start:
+          text: "Schwerathlet"
+          file: index
         location:
           text: "Location"
           file: location
@@ -36,9 +37,10 @@ locales:
       message: "Train your endurance, stamina, strength, flexibility, power, coordination, agility, balance and accuracy."
   de:
     header:
-      text: "Schwerathlet"
-      file: index
       navigation:
+        start:
+          text: "Schwerathlet"
+          file: index
         location:
           text: "Standort"
           file: standort
